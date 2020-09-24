@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/assets/css/burger_style.css" type="text/css" />
+    <title>Eat Da Burger!</title>
+    <script src="https://code.jquery.com/jquery.js"></script>
+</head>
+
+<body>
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <img src="public/assets/img/burger.png" width="200px">
+            <h1 class="display-4">Eat More Burgers!</h1>
+            <p class="lead">Add burgers to your list so you won't forget to eat them.</p>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="row">
+            <div class="col-sm-7" id="toEat">
+                <h2>Burgers to Be Eaten</h2>
+                <div class="input-group mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            This is some text within a card body.
+                        </div>
+                    </div>
+                    <div class="input-group-append">
+                        <button class="btn btn-light devour" type="button">Devour it!</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5" id="eaten">
+                <h2>Burgers Already Eaten</h2>
+                <div class="input-group mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            This is some text within a card body.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="row justify-content-center">
+            <div class="form-group">
+                <textarea width="100%" class="form-control" rows="3"></textarea>
+                <button type="submit" class="btn btn-light" id="add-burger">Submit</button>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+header {
+    text-align: center;
+}
+
+section {
+    padding-bottom: 50px;
+}
+
+article {
+    display: flex;
+    align-content: center;
+}
+
+.display-4 {
+    font-weight: bold;
+}
+
+.jumbotron {
+    background-color: #ceebeb;
+    padding: 20px;
+}
+
+.form-group {
+    text-align: center;
+}
+
+.btn-outline-dark {
+    background-color: #e6f4f5;
+    margin-left: 15px;
+}
+
+.btn-dark {
+    background-color: #683524;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card {
+    padding: 0px;
+}
+
+#subheader {
+    background-color: #e6f4f5;
+}
+
+h1 {
+    font-family: 'Notable', sans-serif;
+}
+
+h2 {
+    padding: 35px;
+    font-family: 'Notable', sans-serif;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-bottom: 0rem;
+}

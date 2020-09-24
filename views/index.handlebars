@@ -1,0 +1,46 @@
+<header class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <img src="/assets/img/burger.png" width="200px">
+    <h1 class="display-4">Eat More Burgers!</h1>
+    <p class="lead">Add burgers to your list so you won't forget to eat them.</p>
+  </div>
+</header>
+
+<section class="container" id="subheader">
+  <div class="row justify-content-center">
+    <h2>Add a Burger to Your List</h2>
+  </div>
+  <div class="row justify-content-center">
+    <div class="form-group">
+      <input type="text" id="burger-name" name="name">
+      <button type="submit" class="btn btn-dark" id="add-burger">Submit</button>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <div class="row">
+    <div class="col-sm-7" id="toEat">
+      <h2>To Be Eaten</h2>
+      <div class="input-group mb-3">
+        {{#each burgers}}
+        {{#unless devoured}}
+        {{> card-toeat devoured=false}}
+        {{/unless}}
+        {{/each}}
+      </div>
+    </div>
+    <div class="col-sm-5" id="eaten">
+      <h2>Already Eaten</h2>
+      <div class="input-group mb-3">
+        {{#each burgers}}
+        {{#if devoured}}
+        {{> card-toeat devoured=true}}
+        {{/if}}
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="/assets/js/burgers.js"></script>
