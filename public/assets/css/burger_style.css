@@ -29,13 +29,14 @@ article {
     margin-left: 15px;
 }
 
-.btn-dark {
+.btn-outline-light {
     background-color: #683524;
     font-family: 'Montserrat', sans-serif;
 }
 
-.card {
-    padding: 0px;
+.padding {
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 #subheader {

@@ -11,9 +11,11 @@
     <h2>Add a Burger to Your List</h2>
   </div>
   <div class="row justify-content-center">
-    <div class="form-group">
-      <input type="text" id="burger-name" name="name">
-      <button type="submit" class="btn btn-dark" id="add-burger">Submit</button>
+    <div class="input-group mb-3 padding">
+      <input type="text" class="form-control form-control-lg" id="burger-name" name="name" placeholder="Enter a burger" aria-label="Recipient's username" aria-describedby="basic-addon2">
+      <div class="input-group-append">
+        <button class="btn btn-outline-light" type="button">SUBMIT</button>
+      </div>
     </div>
   </div>
 </section>
@@ -32,7 +34,7 @@
     </div>
     <div class="col-sm-5" id="eaten">
       <h2>Already Eaten</h2>
-      <div class="input-group mb-3">
+      <div class="input-group mb-3 background">
         {{#each burgers}}
         {{#if devoured}}
         {{> card-toeat devoured=true}}
