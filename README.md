@@ -9,7 +9,7 @@
   * [Tests](#tests)
   * [Questions](#questions)
   ## Installation
-  Dependencies include `mysql`, `express`, and `express-handlebars`. Use `npm install` to install the dependencies.
+  Dependencies include `mysql`, `express`, and `express-handlebars`. Use `npm install` to install the dependencies.  
   ## Usage
   Using the input at the top of the page, enter names of burgers, which will be added to the list "To Be Eaten." Click on "DEVOUR IT" to move the burger to the "Already Eaten" list.
   ## License
