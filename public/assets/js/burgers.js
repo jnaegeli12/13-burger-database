@@ -1,4 +1,5 @@
 $(function() {
+    // click even to move a burger from the not-eaten list to the already eaten list
     $(".devour").on("click", function(event) {
       let id = $(this).data("id");
       let newlyEaten = $(this).data("newlyEaten");
@@ -7,7 +8,7 @@ $(function() {
         devoured: newlyEaten
       };
   
-      // Send the PUT request.
+      // PUT request to update the burger's devoured status
       $.ajax("/api/burgers/" + id, {
         type: "PUT",
         data: newlyDevoured
@@ -18,24 +19,23 @@ $(function() {
       );
     });
   
+    // click event to add a burger to the list
     $("#add-burger").on("click", function(event) {
-      // Make sure to preventDefault on a submit event.
       event.preventDefault();
-  
+      
       const newBurger = {
         name: $("#burger-name").val().trim(),
         devoured: 0
       };
       console.log(newBurger);
-  
-      // Send the POST request.
+      
+      // POST request to add a burger to the list of uneaten burgers (default devoured=false)
       $.ajax("/api/burgers", {
         type: "POST",
         data: newBurger
       }).then(
         function() {
           console.log("created new burger");
-          // Reload the page to get the updated list
           location.reload();
         }
       );
