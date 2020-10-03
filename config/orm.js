@@ -38,7 +38,7 @@ const orm = {
         let queryString = "INSERT INTO " + table;
         
         queryString += " (" + cols.toString() + ") ";
-        queryString += "VALUES (" + printQuestionMarks(vals.length) + ")";
+        queryString += "VALUES (" + vals + ")";
 
         console.log(queryString);
 
