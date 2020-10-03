@@ -23,7 +23,6 @@ function objToSql(ob) {
             arr.push(key + " = " + 1);
         }
     }
-
     return arr.toString();
 }
 
