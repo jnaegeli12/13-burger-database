@@ -1,6 +1,6 @@
   # Burger Database App 
   ## Description
-  A complete web application for storing information in a database (in this case, the names of burgers you would like to try)and displaying that information in a web browser using Express Handlebars.
+  A complete web application for storing information in a database (in this case, the names of burgers you would like to try)and displaying that information in a web browser using Express Handlebars. Deployed with [Heroku](https://week-13-burgers.herokuapp.com/).
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
